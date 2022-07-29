@@ -1,0 +1,19 @@
+{
+  "name": "19-myown-project",
+  "version": "1.0.0",
+  "description": "Simple website which lets you check calories of food items using API calls.\r Also added feature of sidebar to add ingrdients as favorites.\r Modern website with sticky navigation bar.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarvadamanS/MrBrightside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sarvadamanS/MrBrightside/issues"
+  },
+  "homepage": "https://github.com/sarvadamanS/MrBrightside#readme"
+}

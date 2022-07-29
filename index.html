@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>My Project</title>
+    <link rel="icon" href="./images/icon.jpg" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav--bar">
+      <div id="links">
+        <div id="logo"><h3>MrBrightside</h3></div>
+        <button class="btn--class btn--logo">Reveal the logo</button>
+        <div class="dropdown">
+          <button class="btn--class btn--content">Learn more about the site</button>
+          <div class="dropdown-content">
+            <a id="btn--opensidebar" href="#">Open Sidebar</a>
+            <a id="btn--closesidebar" href="#">Close Sidebar</a>
+            <a id="btn--recipe--section">Find out calorific values of food</a>
+          </div>
+        </div>
+      </div> <button class="sidebar--btn--icon"><img id='sidebar--icon'src='./images/icon-sidebar.png'></button>
+    </nav>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <span class="close--sidebar">&times;</span>
+      <span class="fav--sidebar--title">Favourite Ingredients</span>
+      <div class="sidebar--content">
+        <!-- <li class="food--item">
+          <a class="preview__link" href="#23456">
+            <figure class="preview__fig">
+            <img src='images/img2.jpg'  alt="Test" />              
+             </figure>
+             <p class="preview__name">
+              Food item 
+             </p>  
+          </a>
+          </li> -->
+        </div>
+      
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Modal -->
+    <div class="modal-window modal-window1">
+      
+      <span class="close--modal">&times;</span>
+      <div class="modal-content">
+        <h3>Know about total calories in food items you consume</h1>
+        <form>
+          <label for="item-name">Food item name:</label>
+          <input type="text" id="foodItem--name" value="" />
+          <input class="btn--class" type="submit" id="foodItem--submitButton" value="Submit" />
+        </form>
+        <div class="output--fooditem">
+         <!-- list item will be inserted here -->
+         <!-- <ul class="food--item">
+          <a class="preview__link" href="#23456">
+            <figure class="preview__fig">
+            <img src='images/img2.jpg'  alt="Test" />              
+             </figure>
+             <p class="preview__name">
+              Food item 
+             </p>  
+          </a>
+          </ul> -->
+        
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal-window modal-window2" >
+      <span class="back--btn--modal">&#8592;</span>
+      <span class="close--modal">&times;</span>
+      <div class="modal-content">
+        <h3>Here is the information about food item you searched</h1>
+       <div class="output--ingredient">
+        <img src="images/img1.jpg" class="output--ingredient--image"/>
+         <div class="ingredient--info"><p>Name:Pineapple <br></p><p>Nutrition:100 calories <br></p><p>Estimated cost:10$ <br></p>
+         </div> 
+         <img class='favourite--btn' src="./images/icon22.png"/>
+         </div>
+      </div>
+    </div>
+    
+    <!-- Content -->
+    <div style="margin-right: 90px; margin-left: 40px" id="content">
+      <div class="section--observe" style="margin: 1px; display: block">
+        <div>
+          <img
+            style="height: 300px; width: auto; float: left"
+            src="images/img2.jpg"
+            alt="tech"
+          />
+        </div>
+        <div>
+          Welcome to my page created with the power JavaScript ,<br />
+          You can scroll to the bottom of page to see the site at work,or use
+          the navigation bar at the top to move through the website
+        </div>
+      </div>
+      <!-- Section 1 -->
+      <div style="margin-top: 450px" class="section--1">
+        <div>
+          <img
+            style="margin: 40px; width: auto; height: 300px; float: right"
+            src="images/img3.jpg"
+          />
+        </div>
+        <div >
+          This  is the main body of the website, here we are going to include a
+          really cool API,and might add a game in future.
+          <button class="btn--class recipe--btn">
+            Click here to find more about calorific value of food
+          </button>
+          <img
+            src="images/img4.jpg"
+            style="height: 340px; width: auto; margin: 40px"
+          />
+        </div>
+      </div>
+      <div class='container--button'><button class="btn--class cont--button" data-vehicle="car">Cars</button><button class="btn--class cont--button" data-vehicle="bike">Bikes</button><button class="btn--class cont--button" data-vehicle="plane">Planes</button></div>
+      <div class='container--text'>
+        <div class="cont--text cont--text--bike ">Bikes are beauitful, loved by every genration 
+        <img
+        src="images/bike.jpg"
+        class="container-images"/>
+        </div>
+        <div class="cont--text cont--text--car " >Cars are really fast
+         <img
+      src="images/car.jpg"
+      class="container-images" />
+        </div>
+        <div class="cont--text cont--text--plane" >Planes can carry alot of people from a to b <img
+    src="images/plane.jpg"
+    class="container-images"/>
+        </div>
+       </div>
+      </div>
+      <div class="footer">
+        <p >HTML ,CSS, JavaScript &copy;  <a href="https://twitter.com/drunkenhancock" style="color:rgb(85, 212, 255)">Sarvadaman Singh</a></p>
+      </div>
+
+    <script type="module" src="test.js"></script>
+  </body>
+</html>
