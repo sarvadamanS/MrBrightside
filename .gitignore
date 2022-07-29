@@ -1,4 +1,8 @@
 // .gitignore
 
 # api keys
-.env   
+apiKey.js 
+node_modules
+
+# Local Netlify folder
+.netlify

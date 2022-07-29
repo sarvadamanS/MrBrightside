@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sarvadamanS/MrBrightside/issues"
   },
-  "homepage": "https://github.com/sarvadamanS/MrBrightside#readme"
+  "homepage": "https://github.com/sarvadamanS/MrBrightside#readme",
+  "devDependencies": {
+    "netlify-cli": "^10.12.1"
+  }
 }

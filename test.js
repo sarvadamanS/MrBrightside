@@ -1,4 +1,5 @@
 "use strict";
+import api_Key from "./apiKey.js";
 const btn = document.querySelector(".btn--logo");
 const logo = document.getElementById("logo");
 const sidebar = document.querySelector(".sidebar");
