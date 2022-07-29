@@ -3,7 +3,7 @@ body {
   color: rgb(0, 0, 0);
   background-color: #f4f4f5;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: clamp(0.7rem, 1.5vw, 2.2rem);
 }
 
 img {
@@ -91,9 +91,13 @@ img {
 /* Modals */
 .modal-window {
   /* Reposition logo from the natural layout */
+
   position: fixed;
-  margin-top: 3rem;
-  margin-left: 18rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-top: 3rem;
+  margin-left: 18rem; */
   width: 44rem;
   height: 31rem;
   z-index: 5;
