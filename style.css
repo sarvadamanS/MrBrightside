@@ -8,7 +8,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: fill;
 }
@@ -67,34 +67,35 @@ img {
 
 #logo {
   position: absolute; /* Reposition logo from the natural layout */
-  left: 75px;
+  left: 4rem;
   color: #afa8c7;
-  top: -60px;
+  top: -4rem;
   font-weight: 200;
   z-index: 2;
+  text-shadow: #ffffff;
   transition: transform 2000ms ease-in-out;
   /* mix-blend-mode: multiply; */
 }
 /* Main content */
 #content {
   /* Provide buffer for logo */
-  margin: 55px;
+  margin: 4rem;
   background-color: rgb(224, 212, 235);
 }
 .render--spinner {
   margin-left: auto;
   margin-right: auto;
-  height: 30px;
+  height: 3rem;
   width: auto;
 }
 /* Modals */
 .modal-window {
   /* Reposition logo from the natural layout */
   position: fixed;
-  margin-top: 50px;
-  margin-left: 280px;
-  width: 700px;
-  height: 500px;
+  margin-top: 3rem;
+  margin-left: 18rem;
+  width: 44rem;
+  height: 31rem;
   z-index: 5;
   border-radius: 0.2rem;
   background-color: rgb(135, 219, 180);
@@ -111,7 +112,7 @@ img {
   background-color: #fefefe;
   /* 15% from the top and centered */
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid rgb(255, 255, 255);
   width: 90%;
   height: 75%;
@@ -139,20 +140,20 @@ img {
   font-size: 1rem;
   font-weight: 100;
   margin: auto;
-  padding: 7px;
+  padding: 0.5rem;
   display: inline-block;
 }
 .preview__fig {
   height: 3.5rem;
   width: auto;
   margin: auto;
-  padding: 5px;
+  padding: 0.35rem;
   float: left;
   mix-blend-mode: multiply;
 }
 .food--item {
   width: 90%;
-  margin: 3px;
+  margin: 0.2rem;
 }
 /* Modal2 */
 /* .output--ingredient {
@@ -161,7 +162,7 @@ img {
   margin: 3px;
 } */
 .output--ingredient--image {
-  height: 80px;
+  height: 5rem;
   width: auto;
   float: left;
 }
@@ -170,21 +171,22 @@ img {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  right: 280px;
-  bottom: -50px;
-  height: 40px;
+  right: 17rem;
+  bottom: -4rem;
+  height: 2.5rem;
   width: auto;
   padding: 1;
 }
 .ingredient--info {
   text-align: right;
+  font-size: 1.25rem;
 }
 /* Sidebar */
 .sidebar {
   position: absolute; /* Reposition logo from the natural layout */
   top: 0px;
-  right: -200px;
-  width: 300px;
+  right: -12.5rem;
+  width: 20rem;
   height: 100%;
   z-index: 5;
   background-color: gray;
@@ -207,16 +209,16 @@ img {
   border-width: 0;
   height: 2.5rem;
   width: auto;
-  right: 2;
+  right: 0.5rem;
   position: absolute;
-  top: 2px;
+  top: 0.25rem;
   object-fit: fill;
   cursor: pointer;
 }
 .fav--sidebar--title {
   border: none;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 0.25rem 0.6rem;
   vertical-align: top;
   font-size: 1.3rem;
   overflow: hidden;
@@ -237,7 +239,7 @@ img {
 .back--btn--modal {
   border: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   vertical-align: top;
   font-size: 2rem;
   overflow: hidden;
@@ -253,8 +255,8 @@ img {
   padding: auto;
   text-align: justify;
   border-width: 0;
-  margin-right: 16px;
-  margin: 3px;
+  margin-right: 1rem;
+  margin: 0.2rem;
   cursor: pointer;
   font-family: inherit;
   color: #444;
@@ -284,13 +286,13 @@ img {
 .container--button {
   height: 3rem;
   background-color: #444;
-  width: 800;
+  width: 50rem;
 
   margin-left: auto;
   margin-right: auto;
 }
 .cont--button {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   /* position: relative; */
   /* padding-left: 4%;
   padding-right: 4%; */
@@ -313,22 +315,22 @@ img {
   /* display: none; */
   opacity: 0;
   color: aqua;
-  padding: 20px;
+  padding: 1.25rem;
   transition: opacity 500ms ease-in-out;
 }
 
 .container--text {
-  height: 500px;
+  height: 31rem;
   background-color: rgb(120, 134, 123);
-  width: 800;
+  width: 50rem;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 .container-images {
-  height: 340px;
+  height: 21rem;
   width: auto;
-  margin: 20px;
+  margin: 1.25rem;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -341,8 +343,8 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: -41px;
-  height: 120px;
+  margin-top: -3rem;
+  height: 6rem;
   width: 100%;
   background-color: #444;
   opacity: 0.95;

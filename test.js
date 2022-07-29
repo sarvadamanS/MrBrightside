@@ -64,7 +64,6 @@ const addToFav = function (el) {
   // renderFavSidebar(state.favIngredient);
 };
 const removeFromFav = function (el, index) {
-  console.log("removed from fav");
   state.favIngredient.splice(index, 1);
   el.setAttribute("src", "./images/icon22.png");
   // renderFavSidebar(state.favIngredient);
@@ -93,9 +92,6 @@ const renderIngredient = function (el) {
     (el) => el.name === "Calories"
   );
   const iconState = state.favIngredient.filter((elF) => elF.id === el.id);
-  console.log(iconState);
-  console.log(state.favIngredient);
-
   outputIngredient.innerHTML = "";
   let html = "";
   html += ` 
@@ -171,7 +167,6 @@ const getIngredientInfo = async function (id) {
     );
     const req = await Promise.race([apiCall, timeOutFunc(5)]);
     const reqFullfilled = await req.json();
-    console.log(reqFullfilled);
     if (reqFullfilled.status === "failure")
       return displayError(outputIngredient, reqFullfilled.message);
     // const { results } = reqFullfilled;
@@ -189,7 +184,7 @@ const openSidebar = function () {
   sidebar.style.display = "block";
   sidebarState = true;
   setTimeout(function () {
-    sidebar.style.transform = "translate(-200px,0)";
+    sidebar.style.transform = "translate(-12.5rem,0)";
     sidebar.style.position = "fixed";
     overlay.style.display = "block";
     renderFavSidebar(state.favIngredient);
@@ -199,7 +194,7 @@ const openSidebar = function () {
 const closeSidebar = function () {
   // e.preventDefault();
   sidebarState = false;
-  sidebar.style.transform = "translate(200px,0)";
+  sidebar.style.transform = "translate(12.5rem,0)";
   overlay.style.display = "none";
   setTimeout(function () {
     sidebar.style.display = "none";
@@ -208,7 +203,7 @@ const closeSidebar = function () {
 const openModal = function (modal, state) {
   // btnRecipe.style.backgroundColor = `${randomColor()}`;
   modal.style.display = "block";
-  overlay.style.display = "grid";
+  overlay.style.display = "block";
   modalState = state;
 };
 const closeModal = function (modal) {
@@ -237,7 +232,7 @@ btnRecipeSec.addEventListener("click", function () {
 });
 
 btn.addEventListener("click", function () {
-  logo.style.transform = "translate(0,35px)";
+  logo.style.transform = "translate(0,2.5rem)";
 });
 sideBarBtn.addEventListener("mouseover", function () {
   sidebarIconImg.setAttribute("src", "./images/icons-sidebar-hover.png");
@@ -309,7 +304,6 @@ foodItemSubmitBtn.addEventListener("click", function (e) {
 //Opening ingredient liks from search results
 outputFoodItem.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log(e.target);
   const clicked = e.target.closest(".preview__link");
   console.log(clicked);
   if (!clicked) return;
@@ -325,12 +319,8 @@ sidebarContent.addEventListener("click", function (e) {
   const clicked = e.target.closest(".preview__link");
   if (!clicked) return;
   if (clicked) {
-    console.log(clicked);
     const idFav = clicked.getAttribute("href").slice(1);
-    console.log(idFav);
     const loadIng = state.favIngredient.filter((el) => el.id === +idFav);
-
-    console.log(loadIng);
     if (loadIng.length > 0) {
       closeSidebar();
       openModal(modalWindow2, 2);
@@ -350,11 +340,9 @@ outputIngredient.addEventListener("click", function (e) {
       const elToRemove = state.favIngredient.findIndex(
         (el) => el.id === state.curIngredient.id
       );
-      console.log(isBookmarked);
       if (isBookmarked.length === 0) {
         addToFav(clicked);
       } else {
-        console.log("already there");
         removeFromFav(clicked, elToRemove);
       }
     }
